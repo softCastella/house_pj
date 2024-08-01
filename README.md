@@ -12,3 +12,5 @@ git checkout [myBranchNumber] #다시 자기 브랜치로 이동한다.
 git merge main #main 브랜치에 받아온 내용을 현재 내 브랜치로 가져와서 병합한다.
 
 ```
+
+#본인 브랜치 커밋/푸쉬 방법
