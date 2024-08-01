@@ -14,3 +14,6 @@ git merge main #main 브랜치에 받아온 내용을 현재 내 브랜치로 �
 ```
 
 #본인 브랜치 커밋/푸쉬 방법
+git add .
+git commit -m '여기에 로그 메시지 작성.'
+git push
