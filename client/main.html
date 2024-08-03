@@ -1,0 +1,12 @@
+<!-- main.html -->
+<template name="main">
+  <div class="main">
+    {{#each posts}}
+      <article>
+        <div>
+          <a href="/detail/{{_id}}">{{title}}</a>
+        </div>
+      </article>
+    {{/each}}
+  </div>
+</template>
