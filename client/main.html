@@ -1,9 +1,11 @@
 
 <template name="main">
-  {{#each users}} 
-  <div>
-    내 이름은 {{name}} 나이는 {{age}} 주소는 {{address}}
-  </div>
+  {{#each posts}} 
+  <article>
+    <div>
+      <a href="/detail/{{_id}}">{{title}}</a>
+    </div>
+  </article>
   {{/each}}
 
 </template>

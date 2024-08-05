@@ -1,7 +1,13 @@
-Users = new Mongo.Collection('users');
+Posts = new Mongo.Collection('posts');
+
+FlowRouter.route('/', {
+    action: function() {
+        BlazeLayout.render('layout', {main:'main'});
+    }
+})
 
 Template.main.helpers({
-    users: function() {
-        return Users.find().fetch()
+    posts: function() {
+        return Posts.find().fetch()
     }
 });

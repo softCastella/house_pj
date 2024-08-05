@@ -3,27 +3,31 @@
 // 그러면 3개의 데이터를 넣어라.
 // .find() .insert() .remove() .update()
 
-Users = new Mongo.Collection('users');
+Posts = new Mongo.Collection('posts');
 
-if (Users.find().count() == 0) {
+if (Posts.find().count() == 0) {
   console.log('데이터가 생성중!!!!');
   const data = [
     {
-        name: '진정원',
-        age: 44,
-        address: '어쩌고시 어쩌고동'
-    }, {
-        name: '홍길동',
-        age: 3000,
-        address: '한양'
-    }, {
-        name: '철수',
-        age: 20,
-        address: '서울시 강남구'
-    }
+        createdAT: new Date(),
+        title: '1번 테스트 제목입니다.',
+        content: '이게 게시판 내용입니다'
+    },
+    {
+       createdAT: new Date(),
+        title: '2번 테스트 제목입니다.',
+        content: '이게 게시판 내용입니다'
+    },
+    {
+      createdAT: new Date(),
+      title: '3번 테스트 제목입니다.',
+      content: '이게 게시판 내용입니다'
+    },
+
   ];
 
+
   data.forEach(function(item) {
-    Users.insert(item);
+    Posts.insert(item);
   });
 }

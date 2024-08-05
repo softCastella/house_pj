@@ -1,8 +1,8 @@
 // this is server.
 
 Meteor.methods({
-    getUsers: function() {
-        return Users.find().fetch();
+    getPosts: function() {
+        return Posts.find().fetch();
     }
 });
 
